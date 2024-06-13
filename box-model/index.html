@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #parent > div {
+        border: 1px solid black;
+      }
+      #parent2 > span {
+        border: 1px solid black;
+        display: inline-block;
+      }
+      #span1 {
+        padding: 20px;
+      }
+      #span2 {
+        width: 100px;
+        margin: 60px;
+        padding: 20px;
+      }
+      #span3 {
+        width: 100px;
+        padding: 20px;
+      }
+      #parent3 > span {
+        border: 1px solid black;
+        display: inline-block;
+      }
+      #span4 {
+        padding-top: 100px;
+        padding-left: 30px;
+        margin-right: 40px;
+      }
+
+      /* shorthand */
+      #span5 {
+        padding: 70px 20px;
+        margin: 80px 10px;
+      }
+      #span6 {
+        padding: 100px 30px 70px;
+        margin: 100px 30px 70px;
+      }
+      #span7 {
+        padding: 100px 30px 60px 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+    <div id="parent">
+      <div id="box1">1</div>
+      <div id="box2">2</div>
+      <div id="box3">3</div>
+    </div>
+
+    <h1>Box Model 2</h1>
+    <span id="parent2">
+      <span id="span1">hello</span>
+      <span id="span2">world</span>
+      <span id="span3">technology</span>
+    </span>
+
+    <h1>Box Model 3</h1>
+    <span id="parent3">
+      <span id="span4">hello</span>
+      <span id="span5">world</span>
+      <span id="span6">technology</span>
+      <span id="span7">all sides</span>
+    </span>
+  </body>
+</html>
