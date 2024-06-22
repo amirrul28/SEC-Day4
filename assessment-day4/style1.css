@@ -12,49 +12,50 @@ body {
   font-family: "Monserrat";
 }
 h1 {
-  font-size: 175px;
+  font-size: 80px;
   font-weight: 700;
 }
 h2 {
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 700;
 }
 h3 {
-  font-size: 70px;
+  font-size: 25px;
   font-weight: 500;
 }
 h4 {
-  font-size: 50px;
+  font-size: 15px;
   font-weight: 500;
   color: #737373;
 }
 h6 {
-  font-size: 60px;
+  font-size: 25px;
   font-weight: 100;
   width: 70%;
   margin-top: 50px;
   color: #737373;
 }
+p {
+  font-size: 20px;
+}
 
 /* SECTION 1 STARTS HERE */
 #first {
-  width: 100%;
-  height: 1760px;
+  width: 100vw;
+  height: 100vh;
   background-image: url(./assets/hero-bg.jpeg);
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
 }
 .wrapper {
-  width: 85%;
+  width: 80%;
   height: 100%;
   background-color: none;
+  margin: 0 auto;
 }
-#first > .wrapper > .top {
+.top {
   width: 100%;
   height: 15%;
-  background-color: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,48 +63,50 @@ h6 {
 .t-left {
   width: 45%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  gap: 70px;
 }
 .brand {
-  font-size: 55px;
+  font-size: 25px;
   font-weight: 600;
 }
 .nav {
-  font-size: 45px;
+  font-size: 15px;
   font-weight: 500;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
 }
-.nav > a {
-  margin-left: 70px;
-}
+
 .t-right {
-  width: 24%;
-  height: 100%;
+  width: 30%;
   background-color: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  font-size: 45px;
+  font-size: 20px;
   font-weight: 500;
 }
 .member {
-  width: 55%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #23a6f0;
-  padding: 50px 60px;
-  border-radius: 20px;
-  margin-left: 20px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  margin-left: 50px;
 }
+
 .member > img {
-  width: 40px;
-  margin-left: 5px;
+  width: 10px;
+  margin-left: 10px;
 }
 #first > .wrapper > .mid {
   width: 60%;
-  height: 55%;
+  height: 400px;
   background-color: none;
   display: flex;
   flex-direction: column;
@@ -120,18 +123,18 @@ h6 {
 .quote {
   background-color: #23a6f0;
   color: white;
-  font-size: 50px;
+  font-size: 20px;
   font-weight: 500;
-  padding: 50px 80px;
+  padding: 20px 40px;
   border-radius: 100px;
 }
 .learn {
   background-color: none;
   border: 2px solid #23a6f0;
   color: #23a6f0;
-  font-size: 50px;
+  font-size: 20px;
   font-weight: 500;
-  padding: 50px 70px;
+  padding: 20px 40px;
   border-radius: 100px;
   margin-left: 20px;
 }
@@ -139,10 +142,8 @@ h6 {
 /* SECTION 2 STARTS HERE */
 #second {
   width: 100%;
-  height: 1760px;
+  height: 780px;
   background-color: #fafafa;
-  display: flex;
-  justify-content: center;
 }
 #second > .wrapper > .top {
   width: 70%;
@@ -150,6 +151,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  align-items: start;
 }
 #second > .wrapper > .mid {
   width: 100%;
@@ -171,9 +173,9 @@ h6 {
 }
 .client > .c-img {
   width: 19.5%;
-  height: 70%;
+  height: 57%;
   background-color: #23a6f0;
-  border-radius: 900px;
+  border-radius: 100px;
   padding: 1%;
   margin: 0 40px;
   display: flex;
@@ -184,7 +186,6 @@ h6 {
   width: 50%;
 }
 .client > .c-text {
-  font-size: 50px;
   width: 30%;
   color: #737373;
 }
@@ -193,7 +194,7 @@ h6 {
 
 #third {
   width: 100%;
-  height: 1760px;
+  height: 760px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -236,23 +237,24 @@ h6 {
   height: 80%;
 }
 .cl-details {
-  margin-left: 80px;
+  margin-left: 30px;
 }
 .rate > img {
-  width: 50px;
-  margin: 40px 0;
+  width: 15px;
+  margin: 10px 0;
 }
 .rate > p {
   color: #737373;
-  font-size: 40px;
-  width: 50%;
+  font-size: 15px;
+  width: 60%;
+  line-height: 1.2em;
 }
 
 /* FORTH SECTION STARTS */
 
 #forth {
   width: 100%;
-  height: 600px;
+  height: 250px;
   background-color: #252b42;
   color: white;
   display: flex;
@@ -285,28 +287,27 @@ h6 {
 }
 .email-input {
   width: 60%;
-  height: 150px;
-  font-size: 40px;
+  height: 50px;
+  font-size: 20px;
   border-radius: 10px 0 0 10px;
   padding-left: 2%;
 }
 .submit-input {
   width: 20%;
-  height: 150px;
+  height: 50px;
   background-color: #23a6f0;
   color: white;
   text-align: center;
   border-radius: 0 10px 10px 0;
-  font-size: 50px;
+  font-size: 20px;
   cursor: pointer;
 }
 
 /* FIFTH SECTION STARTS */
 
 #footer {
-  height: 150px;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 60px;
 }
 #footer > .wrapper {
   display: flex;
@@ -314,10 +315,13 @@ h6 {
   align-items: center;
 }
 .socmed {
-  width: 20%;
+  padding-right: 100px;
+  width: 15%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
+  gap: 10px;
 }
 .socmed > img {
-  width: 70px;
+  width: 100%;
+  height: 100%;
 }
